@@ -8,8 +8,8 @@ const Navbar = () => {
     const [isHamburgermenu, setIsHamburgerMenu] = useState<boolean>(false)
 
     return (
-        <div className="flex justify-center">
-            <div className="container bg-white/70 blur-md flex justify-between items-center py-5 px-10 gap-8">
+        <div className="flex justify-center bg-white/30 backdrop-blur-lg sticky top-0 z-20">
+            <div className="container flex justify-between items-center py-5 px-10 gap-8">
                 <h1 className="font-bold text-3xl max-md:hidden"><Link to="">News</Link></h1>
                 <RxHamburgerMenu onClick={() => setIsHamburgerMenu(true)} className="md:hidden" />
                 <ul className={`justify-self-center flex gap-5 md:overflow-x-auto md:py-3 max-md:bg-white max-md:fixed max-md:pt-10 max-md:gap-10 max-md:top-0 max-md:left-0 max-md:min-h-screen max-md:w-[80%] max-md:flex-col max-md:z-10 max-md:shadow-2xl max-md:shadow-slate-600 ${isHamburgermenu ? "" : "max-md:-translate-x-[100%]"} transition-all duration-200 linear`}>
