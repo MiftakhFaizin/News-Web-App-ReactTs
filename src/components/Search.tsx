@@ -17,7 +17,7 @@ const Search = () => {
             <input
                 onChange={(e: React.ChangeEvent<HTMLInputElement>) => {setInputValue(e.target.value)}}
                 value={inputValue}
-                className="text-sm py-2 px-9 rounded-md focus:shadow shadow-slate-500 outline outline-offset-0 outline-gray-700 transition-all duration-200 linear"
+                className="text-sm py-2 px-9 max-sm:px-5 rounded-md focus:shadow shadow-slate-500 outline outline-offset-0 outline-gray-700 transition-all duration-200 linear"
                 placeholder="Enter keyword..."
             >
             </input>
