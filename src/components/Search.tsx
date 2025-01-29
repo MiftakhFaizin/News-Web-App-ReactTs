@@ -21,7 +21,7 @@ const Search = () => {
                 placeholder="Enter keyword..."
             >
             </input>
-            <CiSearch className="absolute text-xl -translate-y-7 translate-x-2" />
+            <CiSearch className="absolute text-xl -translate-y-7 translate-x-2 max-sm:translate-x-0.5" />
         </form>
     )
 }
