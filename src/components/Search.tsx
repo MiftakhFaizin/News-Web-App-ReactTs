@@ -17,11 +17,11 @@ const Search = () => {
             <input
                 onChange={(e: React.ChangeEvent<HTMLInputElement>) => {setInputValue(e.target.value)}}
                 value={inputValue}
-                className="text-sm py-2 px-9 max-sm:px-5 rounded-md focus:shadow shadow-slate-500 outline outline-offset-0 outline-gray-700 transition-all duration-200 linear"
+                className="text-sm py-2 sm:px-9 max-sm:pl-9 max-sm:pr-2 rounded-md focus:shadow shadow-slate-500 outline outline-offset-0 outline-gray-700 transition-all duration-200 linear"
                 placeholder="Enter keyword..."
             >
             </input>
-            <CiSearch className="absolute text-xl -translate-y-7 translate-x-2 max-sm:translate-x-0.5" />
+            <CiSearch className="absolute text-xl -translate-y-7 translate-x-2" />
         </form>
     )
 }
